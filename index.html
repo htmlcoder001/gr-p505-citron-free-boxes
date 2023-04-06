@@ -7,7 +7,7 @@
       <meta name="referrer" content="no-referrer">
       <meta name="robots" content="noindex, nofollow">
       <title>
-         Капли для похудения Citron: Прощай, эффект отскока!
+        Σταγόνες αδυνατίσματος Fortunella: Αποχαιρέτησε το εφέ της επαναφοράς!
       </title>
 	  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -20,6 +20,8 @@
       <link href="css/orderForm.css" rel="stylesheet">
     
     <link href="css/aos.css" rel="stylesheet">
+    <link href="css/korobki.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
 
 
 <style type="text/css">
@@ -258,270 +260,542 @@
     max-width: 50px;
       }
       </style>
+  <style>
+    .page-header {
+      padding-bottom: 0;
+      margin: 0;
+      width: 100%;
+      border: none;
+    }
+    .page-header__top {
+      height: 100px;
+      background: #e10005;
+    }
+    .header-wrapper {
+      max-width: 980px;
+      align-self: center;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 95px 1fr;
+      justify-content: space-between;
+      height: 100%;
+      align-items: center;
+    }
+    .header-wrapper__menu {
+      width: 25px;
+      height: 21px;
+      background-image: url(images/icon-menu.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    }
+    .header-wrapper__menu:hover {
+      opacity: 0.85;
+    }
+    .header-wrapper__logo {
+      width: 95px;
+      height: auto;
+    }
+    .header-wrapper__actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 32px;
+    }
+    .header-actions__social {
+      display: flex;
+      align-items: baseline;
+      width: 100%;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .header-social__item {
+      display: block;
+      height: 16px;
+      width: 16px;
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: center;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    }
+    .header-social__item:hover {
+      opacity: 0.85;
+    }
+    .--social-fb {
+      background-image: url(images/icon-facebook.png);
+    }
+    .--social-tw {
+      background-image: url(images/icon-twitter.png);
+    }
+    .--social-ig {
+      background-image: url(images/icon-instagram.png);
+    }
+    .--social-in {
+      background-image: url(images/icon-linkedin.png);
+      height: 18px;
+    }
+    .--social-yt {
+      background-image: url(images/icon-youtube.png);
+    }
+    .--social-tt {
+      background-image: url(images/icon-tiktok.svg);
+    }
+    .header-actions__search {
+      flex: 18px;
+      max-width: 16px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url(images/icon-search.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    }
+    .header-actions__search:hover {
+      opacity: 0.85;
+    }
+    .page-header__bottom {
+      height: 35px;
+      background: #2d2d2e;
+    }
+    .header-nav {
+      max-width: 980px;
+      align-self: center;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .header-nav__item {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      letter-spacing: .68px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      color: #fff;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    }
+    .header-nav__item:hover {
+      color: #999;
+      text-decoration: none;
+    }
+    
+    @media (max-width: 980px) {
+      .page-header__bottom,
+      .header-wrapper {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      .header-nav,
+      .header-wrapper {
+        max-width: 100%;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .header-nav {
+        justify-content: flex-start;
+        gap: 16px;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+      }
+      
+      .--mobile-no-margin {
+        margin: 0;
+      }
+    }
+    
+    @media (max-width: 575px) {
+      .header-actions__social {
+        display: none;
+      }
+      .page-header__bottom {
+        height: 30px;
+      }
+      .header-nav__item {
+        font-size: 11px;
+      }
+      .header-wrapper__logo {
+        height: 50px;
+        width: auto
+      }
+      .header-wrapper {
+        grid-template-columns: 1fr auto 1fr;
+      }
+      .page-header__top {
+        height: 70px;
+      }
+      .content-box {
+        padding-top: 16px!important;
+      }
+    }
+  </style>
    </head>
    <body data-gr-c-s-loaded="true" cz-shortcut-listen="true" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="20">
 
-    <div class="headers" id="menuDedicato">
-		<div class="small-12 columns">
-			<div id="site-menu" class="top-bar">
-				<div class="columns">
-					<a href="#toform"><button id="mainMenuBtn" class="menu-icon"></button></a>
-					<a href="#toform" class="menuTitle">
-						<img src="images/RaiNewsBarra-logo.png" alt="">
-					</a>
-				</div>
-				<div class="columns">
-					<div class="top-bar-right">
-						<ul class="dropdown menu">
-							<li id="cerca-barra">
-								<div class="box">
-
-									<!-- <form name="qtv" method="get" action="index.php"> -->
-
-									<div class="container-2" style="height: 40px;">
-										<a href="#toform">
-											<span class="icon">
-												<!-- <button type="submit" class="enable-search"> -->
-												<img src="images/ricerca-logo-barra.svg" alt="Cerca" style="display: flex;align-items: center;justify-content: center;"
-													onclick="return false;">
-												<!-- </button> -->
-											</span>
-										</a>
-									
-									</div>
-
-								</div>
-							</li>
-							<a href="#toform">
-								<li id="barraRaiBtn" role="menuitem" class="">
-									<button id="barraRaiMenuIcon" class="menu-icon"></button>
-
-									<img src="images/logoMenu.png">
-								</li>
-							</a>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+   <header class="page-header">
+     <div class="page-header__top">
+       <div class="header-wrapper">
+         <a href="#toform" class="header-wrapper__menu"></a>
+         <img src="images/news_logo.png" alt="" class="header-wrapper__logo">
+         <div class="header-wrapper__actions">
+           <div class="header-actions__social">
+             <a href="#toform" class="header-social__item --social-fb"></a>
+             <a href="#toform" class="header-social__item --social-tw"></a>
+             <a href="#toform" class="header-social__item --social-ig"></a>
+             <a href="#toform" class="header-social__item --social-in"></a>
+             <a href="#toform" class="header-social__item --social-yt"></a>
+             <a href="#toform" class="header-social__item --social-tt"></a>
+           </div>
+           <a href="#toform" class="header-actions__search"></a>
+         </div>
+       </div>
+     </div>
+     <div class="page-header__bottom">
+       <nav class="header-nav">
+         <a href="#toform" class="header-nav__item">ΠΟΛΙΤΙΚΗ</a>
+         <a href="#toform" class="header-nav__item">ΚΟΙΝΩΝΙΑ</a>
+         <a href="#toform" class="header-nav__item">ΟΙΚΟΝΟΜΙΑ</a>
+         <a href="#toform" class="header-nav__item">ΠΟΛΙΤΙΣΜΟΣ</a>
+         <a href="#toform" class="header-nav__item">ΚΟΣΜΟΣ</a>
+         <a href="#toform" class="header-nav__item">ΚΑΙΡΟΣ</a>
+         <a href="#toform" class="header-nav__item">VIDEOS</a>
+         <a href="#toform" class="header-nav__item">THE MAGAZINE</a>
+         <a href="#toform" class="header-nav__item">ΠΡΩΤΟΣΕΛΙΔΑ</a>
+         <a href="#toform" class="header-nav__item">ΕΙΔΗΣΕΙΣ</a>
+       </nav>
+     </div>
+   </header>
 
       <section class="content-box" style="padding-top:40px;">
          <div class="container content">
             <div class="row d-flex" style="flex-direction: row-reverse;">
                 <div class="sub col-md-4" >
-                    <a href="#toform"><img src="images/subtitle.png"></a>
+                    <a href="#toform"><img src="images/subtitle_gr.jpg"></a>
                 </div>
                <div class="col-md-12 col-lg-7">
                   <h1 class="article-header" >
-                     Капли для похудения Citron: Прощай, эффект отскока!
+                    Σταγόνες αδυνατίσματος Fortunella: Αποχαιρέτησε το εφέ της επαναφοράς!
                   </h1>
-                  <p style="padding-right: 20px; padding-left: 20px">Вы попробовали все для снижения веса? Как все прошло с эффектом отскока?
-                    Возможно, вы не раз возвращались к начальному весу или, что еще хуже, к большему.
+                  <p style="padding-right: 20px; padding-left: 20px">Έχετε δοκιμάσει τα πάντα για να χάσετε το περιττό βάρος; Πώς πήγε με το εφέ της επαναφοράς των περιττών κιλών; Μπορεί να έχετε επιστρέψει στο αρχικό βάρος περισσότερες από μία φορές ή, χειρότερα, σε περισσότερα παραπανίσια κιλά.
                     </p>
                   <!-- <img src="img/portais.png" style="width: 100%" class="img-responsive"> -->
                   <img src="images/pic1.jpg" class="img-responsive" style="width: 100%;max-width: 600px">
                   <p class="m-t-25">
-                      Действительно, магических капель для похудения не существует, но
-                     <strong>
-                        Капли для похудения Citron
-                     </strong>
-                     позволят вам попрощаться со страшным эффектом отскока. Но вам не нужно слепо этому
-                     верить, мы вас познакомим с признанием от первого лица о том, как может работать Citron.
+                    Πράγματι, δεν υπάρχουν μαγικές σταγόνες για την απώλεια του βάρους, αλλά οι σταγόνες αδυνατίσματος <b>Fortunella</b> θα σας επιτρέψουν να αποχαιρετήσετε το τρομερό εφέ της επαναφοράς των περιττών κιλών. Όμως δεν χρειάζεται τυφλά να το πιστεύετε, θα σας παρουσιάσουμε μια εξομολόγηση σε πρώτο πρόσωπο για το πώς μπορεί να λειτουργήσουν οι σταγόνες Fortunella.
                   </p>
                   <p class="m-t-25">
-                     <strong style="font-size:30px;">Зачем пробовать Капли для похудения Citron?</strong>
+                     <strong style="font-size:30px;">Γιατί να δοκιμάσετε τις σταγόνες αδυνατίσματος Fortunella;</strong>
                      <br>
                       
-                     <strong>До и после! Результаты приема Citron на практике:</strong><br>
-                     и затем, из-за бариатрии, неправильных диет и физических упражнений поправилась, что повредило ее здоровье.
+                     <strong>Πριν και μετά! Τα αποτελέσματα της λήψης των σταγόνων αδυνατίσματος Fortunella στην πράξη:</strong><br>
+                    και στη συνέχεια, λόγω της βαριατρικής, της ακατάλληλης διατροφής και σωματικής άσκησης, πήρε περιττό βάρος, κάτι που έβλαψε την υγεία της.
                   </p>
-                  <p class="m-t-25">Я никогда не была худенькой, с детства была «крепкой». В период отрочества я начала страдать от того,
-                  что я не такая, как все, и никак не могла сбросить вес. Единственный момент в жизни, когда я смогла похудеть, был во время учебы в университете. </p>
+                  <p class="m-t-25">Δεν ήμουν ποτέ αδύνατη, από παιδική ηλικία ήμουν «γεματούλα». Κατά την εφηβεία, άρχισα να υποφέρω από το γεγονός ότι δεν ήμουν σαν όλους τους άλλους και δεν μπορούσα να χάσω το περιττό βάρος με κανέναν τρόπο. Η μοναδική φορά στη ζωή μου που κατάφερα να χάσω κάποια κιλά ήταν, όταν σπούδαζα στο πανεπιστήμιο.</p>
                   <p class="m-t-25">
-                     Однако и это не был здоровый способ. Я пропускала приемы пищи и посвящала все время учебе. Затем пришло привыкание, друзья, было мало времени
-                     для еды, и я стала такой, как раньше. Через некоторое время я вышла замуж, и домашняя жизнь, семейные обеды и даже моя первая беременность повлияли на мое тело.
+                    Ωστόσο, ούτε αυτός ήταν ένας υγιής τρόπος. Παρέλειπα τα γεύματα και όλο μου τον χρόνο αφιέρωνα στη μελέτη. Μετά έγινε συνήθεια, φίλοι, λίγος χρόνος για φαγητό, κι έγινα όπως πριν. Μετά από λίγο, παντρεύτηκα, και η καθημερινότητα στο σπίτι, τα οικογενειακά δείπνα, ακόμα και η πρώτη μου εγκυμοσύνη  επηρέασαν το σώμα μου.
                   </p>
                   <p class="m-t-25">
-                     До этого момента, я не хотела признавать, что у меня проблемы с лишним весом. Если кто-то мне говорил об этом, меня это беспокоило. Но меня это утомляло все больше и больше,
-                     я не чувствовала себя удовлетворенной, мне казалось, что ничего мне не идет. Обвиняла остальных в том, что на самом деле было моей проблемой, моего тела и моего веса.
+                    Μέχρι αυτό το σημείο, δεν ήθελα να παραδεχτώ ότι είχα πρόβλημα περιττού βάρους. Αν μου το έλεγε κάποιος, με ενοχλούσε. Δεν ένιωθα ικανοποιημένη, μου φαινόταν ότι τίποτα δεν μου κάνει, με κούραζε όλο και περισσότερο. Κατηγορούσα τους άλλους για αυτό που ήταν πραγματικά το πρόβλημά μου, το σώμα μου και το περιττό βάρος μου.
                   </p>
                   <p class="m-t-25">
-                     Я устала так себя чувствовать, быть уставшей, неудовлетворенной, озлобленной на всех и на саму себя. Тогда началась моя борьба за похудение; я начала пробовать все диеты,
-                     которые находила в журналах или в Интернете. Иногда я достигала результатов, которые потом исчезали из-за эффекта отскока.
+                    Βαρέθηκα να νιώθω έτσι, να είμαι κουρασμένη, ανικανοποίητη, θυμωμένη με όλους και με τον εαυτό μου. Τότε άρχισε ο αγώνας μου για την απώλεια του υπερβολικού βάρους. Άρχισα να δοκιμάζω κάθε δίαιτα που έβρισκα σε περιοδικά ή στο Διαδίκτυο. Μερικές φορές πετύχαινα αποτελέσματα, που στη συνέχεια εξαφανιζόντουσαν λόγω του εφέ της επαναφοράς.
                   </p>
                  
                   <img src="images/pic2.jpg" style="width: 100%">
                    <p class="m-t-25">
-                     Но я уже другая и не могу остановиться, когда рассказываю, как мне удалось победить лишний вес. Сегодня я могу сказать, что здорова, у меня нет лишних килограммов, 
-                     которые бы повредили моему здоровью. Знаете, что самое лучшее? Я себя хорошо чувствую с самой собой, я чувствую себя счастливой.
+                     Αλλά είμαι ήδη διαφορετική και δεν μπορώ να σταματήσω, όταν λέω πώς κατάφερα να χάσω το περιττό βάρος. Σήμερα μπορώ να πω ότι είμαι υγιής, δεν έχω περιττά κιλά,  που βλάπτουν την υγεία μου. Ξέρετε ποιο είναι το καλύτερο; Νιώθω καλά με τον εαυτό μου, νιώθω χαρούμενη.
                   </p>
                   <p class="m-t-25">
-                     Все это оказалось возможным благодаря Каплям для похудения Citron. Как только я познакомилась с ними и решила попробовать, бросила перекусы вне режима и привычку не любить диетическую пищу.
+                    Όλα αυτά έγιναν δυνατά χάρη στις σταγόνες αδυνατίσματος Fortunella. Μόλις τις ανακάλυψα και αποφάσισα να τις δοκιμάσω, σταμάτησα το τσιμπολόγημα και τη συνήθεια να μην μου αρέσουν τα διαιτητικά φαγητά.
                   </p>
                   <p class="m-t-25">
-                    Они изменили мою жизнь, улучшили не только внешний вид, но и настроение. Мой муж говорит, что я оставила наконец это плохое настроение, которое меня всегда преследовало,
-                    как темное облако над головой. Я снова стала улыбаться, я стала самой собой и не стыдилась своего тела. 
+                    Μου άλλαξαν τη ζωή, βελτίωσαν όχι μόνο την εμφάνισή μου, αλλά και τη διάθεσή μου. Ο άντρας μου λέει ότι έχω απαλλαγεί επιτέλους από αυτή την κακή διάθεση, που πάντα είχα. Άρχισα να χαμογελάω ξανά, έγινα ο εαυτός μου και δεν ντρεπόμουν για το σώμα μου.
                   </p>
                   <p class="m-t-25">
-                     Мое тело заставляло меня чувствовать себя связанной, в ловушке. Участие в семейном празднике было мучением. Я чувствовала, что все на меня смотрят и критикуют мое тело. Никакая
-                     одежда мне не подходила. Знаете, что происходит сейчас? Меня все поздравляют за усердие, за улучшение здоровья и говорят, что я красива. 
+                    Το σώμα μου με έκανε να νιώθω δεμένη, παγιδευμένη. Οι οικογενειακές διακοπές ήταν σκέτο μαρτύριο. Ένιωθα ότι όλοι με κοιτούσαν και κατέκριναν το σώμα μου. Κανένα από τα ρούχα δεν μου έκανε. Ξέρετε τι συμβαίνει τώρα; Όλοι με συγχαίρουν για την επιμονή, τη βελτίωση της υγείας μου και λένε ότι είμαι όμορφη.
                   </p>
                   <p class="m-t-25">
-                     Citron помогло мне достичь результата с помощью усилий. Теперь я могу есть здоровую пищу и не беспокоиться потом о том, что снова
-                     наберу весь потерянный вес. Иногда я могу позволить себе капризы и не рыдать,
-                     увидев показания весов, узнав, что на каждый килограмм сниженного веса я затем набрала два. Я быстро теряю вес и без эффекта отскока.
+                    Οι σταγόνες αδυνατίσματος Fortunella με βοήθησαν να πετύχω αποτελέσματα μέσα από την προσπάθειά μου. Τώρα μπορώ να τρώω υγιεινά και να μην ανησυχώ για την ανάκτηση όλων των περιττών κιλών που έχασα. Μερικές φορές έχω την πολυτέλεια να είμαι ιδιότροπη και να μην κλαίω όταν βλέπω τις ενδείξεις της ζυγαριάς, όταν ανακαλύπτω ότι για κάθε κιλό βάρους που έχασα, τότε έπαιρνα δύο. Χάνω βάρος γρήγορα και χωρίς το εφέ της επαναφοράς.
                   </p>
                   <img src="images/pic3.jpg" style="width: 100%">
                   <p class="m-t-25">
-                     Я уже не чувствую тяжести после еды, больше не было проблем с желудком. Ощущение тяжести при каждом движении теперь – всего лишь воспоминание.
-                     Все надежды, которые у меня были каждый раз, когда я начинала новую диету, перестали рушиться. и теперь стали реальностью.
+                    Δεν αισθάνομαι πλέον βάρος μετά το φαγητό, δεν υπήρχαν άλλα προβλήματα στο στομάχι. Το αίσθημα βάρους με κάθε κίνηση είναι πλέον απλώς μια ανάμνηση. Όλες οι ελπίδες, που είχα κάθε φορά που ξεκινούσα μια νέα δίαιτα, σταμάτησαν να γκρεμίζονται και έχουν γίνει πλέον πραγματικότητα.
                   </p>
                   <p class="m-t-25">
-                     Я хорошо выгляжу, отлично себя чувствую и моего врача не перестают удивлять результаты моих анализов. У меня намного снизился холестерин и уровень гликемии. 
-                     Я чувствую себя более активной и могу с удовольствием проводить время с дочкой, как никогда раньше. 
+                    Η εξωτερική μου εμφάνιση είναι τέλεια, αισθάνομαι υπέροχα και ο γιατρός μου δεν σταματά ποτέ να με εκπλήσσει με τα αποτελέσματα των εξετάσεών μου. Τα επίπεδα της χοληστερόλης και της γλυκαιμίας μου, έχουν πέσει σημαντικά. Νιώθω πιο δραστήρια και μπορώ να απολαμβάνω τον χρόνο με την κόρη μου όπως ποτέ άλλοτε.
                   </p>
                   <p class="m-t-25">
-                     Со свадьбы я набрала около 40 кг, на фото кажется, что я другой человек. Теперь я снова девчонка. Но более счастливая и более худая. 
-                     Мой муж все время говорит мне, какая я красивая, но не только из-за внешности, но и из-за отношения к нему.  
+                    Στην διάρκεια του γάμου μου πήρα περίπου 40 κιλά, στη φωτογραφία φαίνεται να είμαι άλλος άνθρωπος. Τώρα είμαι πάλι κοριτσάκι. Αλλά πιο χαρούμενη και πιο αδύνατη. Ο άντρας μου μου λέει συνέχεια πόσο όμορφη είμαι, όχι μόνο λόγω της εμφάνισής μου, αλλά και λόγω της στάσης μου απέναντί του.
                   </p>
                   <p class="m-t-25">
-                     Мне стало комфортнее с самой собой, и это заметно. Самое лучшее – это то, что не нужно было морить себя голодом для потери этих килограммов, которые сводили меня с ума. 
-                     Я наконец нашла здоровый способ улучшить метаболизм. Мои годы отчаяния закончились, когда я нашла Капли для похудения Citron, я их люблю!
+                    Έχω γίνει πιο άνετη με τον εαυτό μου, και αυτό φαίνεται. Το καλύτερο είναι ότι δεν χρειάστηκε να λιμοκτονήσω για να χάσω εκείνα τα περιττά κιλά που με τρέλαιναν. Βρήκα επιτέλους έναν υγιή τρόπο να βελτιώσω τον μεταβολισμό μου. Τα χρόνια της απελπισίας μου τελείωσαν, όταν βρήκα τις σταγόνες αδυνατίσματος Fortunella, τις λατρεύω!
                   </p>
                   <p class="m-t-25">
-                     Измените свою жизнь и вы, придите в гармонию со своим телом и окружением раз и навсегда. Вы проводите лучшие годы жизни в ссоре с самими собой, без возможности наслаждаться заслуженным благополучием. Сделайте как я и попробуйте Citron.
+                    Αλλάξτε τη ζωή σας και εσείς, ελάτε σε αρμονία με το σώμα και το περιβάλλον σας μια για πάντα. Περνάτε τα καλύτερα χρόνια της ζωής σας σε μια διαμάχη με τον εαυτό σας, χωρίς την ευκαιρία να απολαύσετε την ευημερία που σας αξίζει. Κάντε σαν εμένα και δοκιμάστε τις σταγόνες αδυνατίσματος Fortunella.
                   </p>
                    <p class="m-t-25">
-                     <strong style="font-size:30px;">Добейтесь желаемой фигуры и улучшите здоровье с помощью Капель для похудения Citron</strong>
+                     <strong style="font-size:30px;">Αποκτήστε την επιθυμητή σιλουέτα και βελτιώστε την υγεία σας με τις σταγόνες αδυνατίσματος Fortunella</strong>
                   </p>
                   
-                  <p class="m-t-25"> Капли для похудения Citron – это натуральный продукт, в котором сосредоточены мощные преимущества цитрусовых. 
-                  Они полностью меняют метаболизм, чтобы вы взяли лучшее от каждого продукта. Их эффект следующий:
-                  </p>
+                  <p class="m-t-25">Οι σταγόνες αδυνατίσματος Fortunella είναι ένα φυσικό προϊόν, που συγκεντρώνει τα ισχυρά οφέλη των εσπεριδοειδών. Αλλάζουν εντελώς τον μεταβολισμό σας, ώστε να έχετε το καλύτερο δυνατό αποτέλεσμα από το κάθε προϊόν. Η επίδραση των σταγόνων είναι η εξής:</p>
                   <b style="display: block;margin-left: 20px;">
-                     <li style="font-size:18px">Облегчить пищеварение</li>
-                     <li style="font-size:18px">Вывести жиры</li>
-                     <li style="font-size:18px">Уменьшить воспаление</li>
-                     <li style="font-size:18px">Увеличить ощущение сытости</li>
-                     <li style="font-size:18px">Позаботиться о здоровье суставов</li>
+                    <ul>
+                       <li style="font-size:18px">Διευκολύνει την πέψη</li>
+                       <li style="font-size:18px">Αφαιρεί το λίπος</li>
+                       <li style="font-size:18px">Μειώνει τη φλεγμονή</li>
+                       <li style="font-size:18px">Αυξάνει το αίσθημα κορεσμού</li>
+                       <li style="font-size:18px">Φροντίζει την υγεία των αρθρώσεων</li>
+                    </ul>
                   </b>
                   <p class="m-t-25">
-                    <strong style="font-size:30px;">Частые вопросы</strong>
+                    <strong style="font-size:30px;">Συχνές ερωτήσεις</strong>
                   </p>
                   <p class="m-t-25">
-                    <strong>Капли для похудения Citron подходят для каждого?</strong>
+                    <strong>Οι σταγόνες αδυνατίσματος Fortunella είναι κατάλληλες για όλους;</strong>
                   </p>
                  <p class="m-t-25">
-                    Это 100 % натуральный продукт, изготовленный из цитрусовых, очень популярных в Испании и в мире. 
-                    Они совершенно безвредны для каждого, кто желает потерять вес 
-                    без рисков. Конечно же, для гарантированного результата не рекомендуется превышать рекомендуемую
-                    дозу или принимать их во время беременности или грудного вскармливания.
+                   Είναι ένα 100% φυσικό προϊόν από εσπεριδοειδή, πολύ δημοφιλές στην Ελλάδα και παγκοσμίως. Είναι εντελώς ακίνδυνο για όποιον θέλει να χάσει περιττό βάρος, χωρίς κίνδυνο. Φυσικά, για ένα εγγυημένο αποτέλεσμα, δεν συνιστάται η υπέρβαση της συνιστώμενης δόσης ή η λήψη τους κατά τη διάρκεια της εγκυμοσύνης ή του θηλασμού.
                   </p>
                   <p class="m-t-25">
-                    <strong>Почему Капли для похудения Citron такие эффективные?</strong>
+                    <strong>Γιατί οι σταγόνες αδυνατίσματος Fortunella είναι τόσο αποτελεσματικές;</strong>
                   </p>
                  <p class="m-t-25">
-                    Эффективность этого продукта заключается в комбинации трех основных ингредиентов: Витамин C, биофлавониды и натуральные алкалоиды, существующие во всех цитрусовых.
+                   Η αποτελεσματικότητα αυτού του προϊόντος έγκειται στον συνδυασμό 3 βασικών συστατικών: Βιταμίνη C, βιοφλαβονοειδή και φυσικά αλκαλοειδή, που βρίσκονται σε όλα τα εσπεριδοειδή.
                   </p>
                   <p class="m-t-25">
-                    <strong>Где можно купить этот продукт?</strong>
+                    <strong>Πού μπορείτε να αγοράσετε αυτό το προϊόν;</strong>
+                  </p>
+                 <p class="m-t-25">Σήμερα υπάρχει τρόπος να αποκτήσετε τις σταγόνες αδυνατίσματος Fortunella δωρεάν. Ο κατασκευαστής αυτήν τη στιγμή έχει μια ειδική προσφορά.</p>
+                 <p class="m-t-25">Όσο ισχύει, όλοι μπορούν να λάβουν μέρος στην ηλεκτρονική κλήρωση και για τις σταγόνες αδυνατίσματος Fortunella δωρεάν!</p>
+                 <p class="m-t-25">Αυτό γίνεται για να μάθουν όσο το δυνατόν περισσότεροι άνθρωποι για τη νέα θεραπεία, να απαλλαγούν από τα περιττά κιλά και να ανακτήσουν την ομορφιά και την αυτοπεποίθησή τους! </p>
+                 <p class="m-t-25">Αλλά σας συμβουλεύω ανεπιφύλακτα να βιαστείτε! Η προσφορά θα διαρκέσει έως και τις <strong><script>var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0'); /*January is 0!*/var yyyy = today.getFullYear();today = mm + '.' + dd + '.' + yyyy;document.write(today);</script></strong></p>
+                 <p class="m-t-25">
+                    <strong>Πόσο γρήγορα θα παρατηρήσω τα αποτελέσματα;</strong>
                   </p>
                  <p class="m-t-25">
-                    В надежных онлайн-магазинах по всей стране. Возможна прямая покупка и заказ из дома.
+                   Η αποτελεσματικότητα των σταγόνων αδυνατίσματος Fortunella έχει αποδειχθεί, μπορείτε να δείτε αποτελέσματα από την πρώτη εβδομάδα. Θυμηθείτε ότι αυτό δεν είναι ένα θαυματουργό προϊόν, αλλά η δράση του είναι σταδιακή και αξιόπιστη. Εάν επιμείνετε σε έναν υγιεινό τρόπο ζωής, τα περιττά κιλά δεν θα επιστρέψουν ποτέ.
                   </p>
-                   <p class="m-t-25">
-                    <strong>Как быстро я замечу результаты?</strong>
-                  </p>
-                 <p class="m-t-25">
-                    Эффективность Капель для похудения Citron доказана, вы можете видеть результаты с первой недели. 
-                    Помните, что это не чудодейственный продукт, 
-                    но его действие поэтапное и надежное. Если вы будете придерживаться здорового образа жизни, 
-                    потерянные килограммы никогда не вернутся.
-                  </p>
-                  <p class="m-t-25">
-                   <strong>Попробуйте сейчас Капли для похудения Citron</strong> и присоединяйтесь к миллионам потребителей, получивших здоровье и красоту с помощью этого натурального продукта! 
-                        <br>
-                    Убедитесь сами, что возможно похудеть и никогда больше не вернуться к отправной точке. Попрощайтесь с эффектом отскока с <strong>каплями для похудения Citron!</strong>
-                  </p>
+                 <p class="m-t-25"><b>Δοκιμάστε τις σταγόνες αδυνατίσματος Fortunella</b> τώρα και γίνετε μέλος των εκατομμυρίων καταναλωτών, που έχουν αποκτήσει υγεία και ομορφιά με αυτό το φυσικό προϊόν! Δείτε μόνοι σας ότι είναι δυνατό να χάσετε το περιττό βάρος και να μην επιστρέψετε ποτέ στο σημείο της εκκίνησης. Πείτε αντίο στο εφέ της επαναφοράς, με <b>τις σταγόνες αδυνατίσματος Fortunella</b>!</p>
+  
+  
+                 <div id="toform"></div>
+                 <center class="red_roulete">
+                   <section class="content-boxes">
+                     <div class="entry-header">
+                       <center>
+                         <div class="zakaz"></div>
+                         <br id="formp">
+                         <div id="boxesContainer">
+                           <div class="instructions">
+                             Ανοίξτε το κουτί με την έκπτωση ή βρείτε ένα δωρεάν!
+                             <table>
+                               <tbody>
+                               <tr>
+                                 <td>
+                                   <span class="bounce">↓</span>
+                                 </td>
+                                 <td></td>
+                                 <td><span class="bounce">↓</span></td>
+                               </tr>
+                               </tbody>
+                             </table>
+                           </div>
+                           <div id="boxes" class="boxes boxesfirsttry">
+                             <div id="0">
+                               <img src="images/box.png" class="try">
+                               <img src="images/download.png" class="opentry">
+                               <span class="boxtext">
+                <span class="new_price">ΔΩΡΕΑΝ</span>
+                </span>
+                             </div>
+                             <div id="1">
+                               <img src="images/box.png" class="try">
+                               <img src="images/download.png" class="opentry">
+                               <span class="boxtext">
+                <span class="new_price">ΔΩΡΕΑΝ</span>
+                </span>
+                             </div>
+                             <div id="2">
+                               <img src="images/box.png" class="try">
+                               <img src="images/download.png" class="opentry">
+                               <span class="boxtext">
+                <span class="new_price">ΔΩΡΕΑΝ</span>
+                </span>
+                             </div>
+                             <div id="3">
+                               <img src="images/box.png" class="try">
+                               <img src="images/download.png" class="opentry">
+                               <span class="boxtext">
+                <span class="new_price">ΔΩΡΕΑΝ</span>
+                </span>
+                             </div>
+                             <div id="4">
+                               <img src="images/box.png" class="try">
+                               <img src="images/download.png" class="opentry">
+                               <span class="boxtext">
+                <span class="new_price">ΔΩΡΕΑΝ</span>
+                </span>
+                             </div>
+                             <div id="5">
+                               <img src="images/box.png" class="try">
+                               <img src="images/download.png" class="opentry">
+                               <span class="boxtext">
+                <span class="new_price">ΔΩΡΕΑΝ</span>
+                </span>
+                             </div>
+                             <div id="6">
+                               <img src="images/box.png" class="try">
+                               <img src="images/download.png" class="opentry">
+                               <span class="boxtext">
+                <span class="new_price">ΔΩΡΕΑΝ</span>
+                </span>
+                             </div>
+                             <div id="7">
+                               <img src="images/box.png" class="try">
+                               <img src="images/download.png" class="opentry">
+                               <span class="boxtext">
+                <span class="new_price">ΔΩΡΕΑΝ</span>
+                </span>
+                             </div>
+                             <div id="8">
+                               <img src="images/box.png" class="try">
+                               <img src="images/download.png" class="opentry">
+                               <span class="boxtext">
+                <span class="new_price">ΔΩΡΕΑΝ</span>
+                </span>
+                             </div>
+                           </div>
+                           <div id="shadow"></div>
+                           <div class="sweet-overlay" style="opacity: 1.03; display: none" tabindex="-1"></div>
+                           <div class="sweet-alert animated bounceIn" id="modal02">
+                             <div class="sa-icon sa-success" id="success02">
+                               <span class="sa-line sa-tip" id="successtip02"></span>
+                               <span class="sa-line sa-long" id="successlong02"></span>
+                               <div class="sa-placeholder"></div>
+                               <div class="sa-fix"></div>
+                             </div>
+                             <p id="cnt" style="text-align: center!important;">
+                               Σας απομένει 1 προσπάθεια! <br>
+                               Προσπαθήστε ξανά!
+                             </p>
+                             <div class="sa-button-container">
+                               <div class="sa-confirm-button-container">
+                                 <button id="update" style="
+                          display: inline-block;
+                          box-shadow: rgba(140, 212, 245, 0.8) 0px 0px 2px,
+                          rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset;
+                          background-color: #ffa400;
+                        ">
+                                   OK
+                                 </button>
+                                 <div class="la-ball-fall"></div>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="order-form order_block">
+                           <div class="order-form-wrapper">
+                             <div class="order-form-header">
+                               <div class="order-form-product-image-section">
+                
+                               </div>
+                               <div class="product-counter-info" style="display: block">
+                                 <h3>Το μόνο που έχετε να κάνετε είναι να εισάγετε το όνομα και τον αριθμό του τηλεφώνου σας.<br>Βιαστείτε! Σας απομένει χρόνος:
+                                   <br><span class="time_remains" id="min">10</span> : <span class="time_remains" id="sec">00</span>
+                                 </h3>
                   
+                                 <div id="form">
                     
-
-            <img src="images/prod.png" style="max-width: 120px;margin:0 auto;display:flex">
-
-                            <style type="text/css">
-            form {
-                color: #000;
-            }
-            #form {
-                box-shadow: none;
-            }
-            @media (min-width: 460px) and (max-width: 599px) {
-                #order_form {
-                    padding: 20px 40px !important;
-                    margin: 0px 0px !important;
-                    padding-bottom: 55px !important;
-                    margin-top: 20px !important;
-                    margin-bottom: 20px !important;
-                } 
-            }
-
-        </style>
-
-        <div class="order-form-block">
-          <!-- <img alt="" class="b-prod" style="max-width: 350px;margin: 0 auto;display: block;" src="img/pote.png"/> -->
-
-        <div id="toform"></div>
-		
-        <form class="toscroll intlTelInput" id="order_form" method="POST">
-                                    <div id="order_form_place" style="display:block;">
-        <center>
-        <img src="images/med.png" style="max-width:100px;">
-        <h2> Официальная форма заказа </h2>
-        <span style="color:blue;font-size:14px;"> Номер 29.982 из 30.000 <span>
-        
-        </span></span>
-        </center>
-        <p class="price" style="text-align:center;max-width: 300px; margin: 0 auto;display: flex; justify-content: center;
-        align-items: center;"> 
-                            <br>
-                            <del style="font-size:22px;" >78€</del>
-
-                            <span class="price_red" style="font-size:26px; color:red;margin-left: 15px;">39€</span>
-        </p>
-        <div class="blue-border">
-        <span><b> Для того чтобы получить Citron, введите свое имя и телефон в поля ниже и нажмите на кнопку ЗАКАЗАТЬ. </b></span>
-        </div>
-
-
-        <div class="order_form_pole">
-        
-<input name="subid" type="hidden" value="{subid}">
-<input name="px" type="hidden" value="{px}">
-<input name="bayer" type="hidden" value="{bayer}">
-        
-        <input name="name" placeholder="Имя" required="" type="text" value>
-        <div class="error-box"></div>
-        </div>
-
-        <div class="order_form_pole">
-        
-        
-        <input name="phone" placeholder="Телефон (мобильный активный)" required="" type="text" value>
-        <div class="error-box"></div>
-        </div>
-        
-
-        <div style="margin-bottom:20px;">
-        <button class="js_submit button__text" type="submit"> ЗАКАЗАТЬ</button>
-        </div>
-        <span class="additional">Служба консультаций скоро перестанет работать<br> * Ваши персональные данные отправятся непосредственно производителю. Только производитель сможет получить к ним доступ. </span>
-        </div>
-        </form>
-
-        </div>
+                                   <div id="form_image">
+                                     <div class="form_image_wrap_image">
+                                       <img src="images/prod.png" alt="" style="max-width:200px;width: 100%!important;">
+                                     </div>
+                                   </div>
+                    
+                    
+                                   <div class="form_wrap" id="objectScrollAttention">
+                                     <form method="POST" geo="it" action="api.php"
+                                           onsubmit="return validate_form(this, 'Si prega di inserire un numero di telefono valido');">
+                                       <label class="descount">ΔΩΡΕΑΝ</label>
                         
-                  </center>
+                                       <div id="price">
+                                         <div class="price_new">
+                                           0 €
+                                         </div>
+                                         <div class="price_old" style="text-decoration: line-through;">
+                                           39 €
+                                         </div>
+                                       </div>
+                        
+                                       <center><label class="inp_name">Όνομα</label></center>
+                                       <input name="name" placeholder="" required="" type="text">
+                        
+                                       <center><label class="inp_phone">Τηλέφωνο (ενεργό κινητό)
+                                       </label></center>
+                                       <input name="phone" placeholder="" required="" type="tel" id="phone">
+                        
+                                       <input name="subid" type="hidden" value="{subid}">
+                                       <input name="px" type="hidden" value="{px}">
+                                       <input name="bayer" type="hidden" value="{bayer}">
+                                       <br>
+                                       <button type="submit" class="btnn">ΠΑΡΑΓΓΕΙΛΕΤΕ</button>
+                        
+                                       <div class="sus">
+                                         <!--<div class="sus_text">I dati sono riservati</div>-->
+                                       </div>
+                      
+                                     </form>
+                                   </div>
+                  
+                                 </div>
+                                 <br>
+                                 <!--Form END-->
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                       </center>
+                     </div>
+                   </section>
+                   <div class="order_block" id style="display: block;">
+                   </div>
+                   <div class="spin-result-wrapper" style="text-align: center!important;">
+                     <div class="pop-up-window">
+                       <div class="close-popup"></div>
+                       <span class="pop-up-heading">Συγχαρητήρια!</span>
+                       <p class="ruletka-p pop-up-text" style="text-align: center!important;">Μπορείτε να πάρετε το προϊόν δωρεάν!</p>
+                       <a class="pop-up-button replace_ignoring" href="#toform">OK</a>
+                     </div>
+                   </div>
+                 </center>
+
+        
+                        
+                 
                </div>
 
             </div>
@@ -530,547 +804,529 @@
 
             <div class="container comments">
                <div class="row border-top">
-                  <div class="col-md-12">
-                     <div class="row recent">
-                        <div class="col-xs-12">
-                                                      <a href="#toform" class="pull-left">Последние комментарии</a>
-                            <p class="pull-right">Добавить комментарий</p>
-                        </div>
-                    </div>
-                    <div class="media no-border-top">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/1.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Сильвия Катасус</a>
-                            </h4>
-                            <p>
-                               Я не знала, что можно так легко похудеть, в течение второй недели я потеряла 8,5 кг, это волшебно!
-                            </p>
-
-                            <p class="bottom">
-                                Нравится. <span class="like">13 Ответить.</span>
-                                <span class="time">12 min</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/2.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Мария Алонсо</a>
-                            </h4>
-                            <p>
-                                Недавно видела презентацию Нурии Рока, посвященную Citron в Инстаграме, и решила попробовать. Я использую  Citron уже 4 недели, это удивительно, я так похудела!
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">6 Ответить.</span>
-                                <span class="time">13 min</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/3.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Ана Падилья</a>
-                            </h4>
-                            <p>
-                                Друг мне рекомендовал это средство 3 недели назад. Результаты впечатляющие.
-                            </p>
-
-
-                            <p class="bottom">
-                                Нравится. <span class="like">19 Ответить.</span>
-                                <span class="time">25 min</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/4.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Каталина Ньето</a>
-                            </h4>
-                            <p>
-                               Мне бы хотелось попробовать Citron вместо липосакции. Я бы так сэкономила кучу денег!
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like"> Ответить.</span>
-                                <span class="time">46 min</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/5.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Росио Фернандес</a>
-                            </h4>
-                            <p>
-                              Я потеряла 3,5 кг за полторы недели!
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">43 Ответить.</span>
-                                <span class="time">Час назад</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/6.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Лаура Кастельяно</a>
-                            </h4>
-                            <p>
-                                Я увидела Citron по телевизору. Только что заказала, капли доставят послезавтра!
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">3 Ответить.</span>
-                                <span class="time">1 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/7.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Хосе Аранда</a>
-                            </h4>
-                            <p>
-                                Возможно, у меня немного больше лишнего веса, чем у большинства из вас.
-                            </p>
-
-                            <p class="bottom">
-                                Нравится. <span class="like"> Ответить.</span>
-                                <span class="time">2 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/8.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Маниэла Мартин</a>
-                            </h4>
-                            <p>
-                                Моя сестра уже несколько месяцев использует Citron, она уже сильно похудела.
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">12 Ответить.</span>
-                                <span class="time">2 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/9.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Лусия Солис</a>
-                            </h4>
-                            <p>
-                               Сработало! Все оказалось просто, не верится, когда вижу себя стройной.
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">53 Ответить.</span>
-                                <span class="time">2 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/10.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Алисиа Прадо</a>
-                            </h4>
-                            <p>Спасибо за информацию, я тоже только что заказала.</p>
-                            <p class="bottom">
-                                Нравится. <span class="like">16 Ответить.</span>
-                                <span class="time">2 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/11.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Нурия Гарофано</a>
-                            </h4>
-                            <p>
-                                Мой Citron приехал сегодня, начну использовать капли, и потом проинформирую здесь о своих результатах.
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">2 Ответить.</span>
-                                <span class="time">2 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/12.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Патрисио Искьердо</a>
-                            </h4>
-                            <p>Моя мама использует этот продукт и потеряла много лишнего веса, он действительно действенный!
- </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">11 Ответить.</span>
-                                <span class="time">2 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/13.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Адриана Перес</a>
-                            </h4>
-                            <p>Я потеряла 11 кг за 4 недели, это действительно замечательно, уже рассказала друзьям!
-
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">33 Ответить.</span>
-                                <span class="time">2 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/14.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Леонор Фернандес</a>
-                            </h4>
-                            <p>Я только что сделал заказ. Жду не дождусь получения Citron!
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">23 Ответить.</span>
-                                <span class="time">3 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/15.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Сара Майо</a>
-                            </h4>
-                            <p>Мне нравится Citron, он полностью изменил мою жизнь, я его использовала только 1,5 месяцев, он действительно изменил мою жизнь и здоровье!
-                            </p>
-                            <img src="images/1c.jpg" style="width: 210px;">
-
-
-
-                            <p class="bottom">
-                                Нравится. <span class="like">6 Ответить.</span>
-                                <span class="time">3 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/16.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Фернандо Лопес</a>
-                            </h4>
-                            <p>Моя подруга послала мне информацию whatsapp, только что заказал!</p>
-                            <p class="bottom">
-                                Нравится. <span class="like">2 Ответить.</span>
-                                <span class="time">3 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/18.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Пабло Гонсалес</a>
-                            </h4>
-                            <p>Я решил попробовать и купил себе. Хочу начать и увидеть свои результаты..
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">8 Ответить.</span>
-                                <span class="time">6 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/19.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Элена Фуэнтес</a>
-                            </h4>
-                            <p>До знакомства с Citron, я попробовала другие продукты, и это действительно лучший для похудения.
-
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">20 Ответить.</span>
-                                <span class="time">8 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/20.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Силвиа Постиго</a>
-                            </h4>
-                            <p>Только что заказала себе!</p>
-                            <p class="bottom">
-                                Нравится. <span class="like">10 Ответить.</span>
-                                <span class="time">8 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/21.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Ирене Матос</a>
-                            </h4>
-                            <p>Недавно использовала эти капли, и сработали очень хорошо, я потеряла 14 кг!
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">13 Ответить.</span>
-                                <span class="time">8 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/22.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Катя Гарсиа</a>
-                            </h4>
-                            <p>В первый раз я была положительно удивлена продуктом для похудения, снизила вес, и к тому же здоровым способом!
-                            </p>
-                            <p class="bottom">
-                                Нравится. <span class="like">3 Ответить.</span>
-                                <span class="time">8 h</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media aos-init aos-animate" data-aos="zoom-in">
-                        <div class="media-left">
-                            <a href="#toform">
-                                <img class="media-object" src="images/23.jpg" alt>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#toform">Дульсе Сильва</a>
-                            </h4>
-                            <p>Не знала, что можно похудеть, ничего не делая, особенно не посещая спортзал.</p>
-                            <p class="bottom">
-                                Нравится. <span class="like">5 Ответить.</span>
-                                <span class="time">10 min</span>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-               <div id="commentPushBlock"></div>
-
+                 <div class="col-md-12">
+                   <div class="row recent">
+                     <div class="col-xs-12">
+                       <p class="pull-left" style="font-size: 18px;font-weight: 600;">Σχόλια</p>
+                       <a href="#toform" class="pull-right" style="font-size: 16px!important;font-weight: 400;text-decoration:underline;">Αφήστε σχόλιο</a>
+                     </div>
+                   </div>
+                   <div class="media no-border-top">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/1.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Ευαγγελία Παπαϊωάννου</a>
+                       </h4>
+                       <p>Δεν ήξερα ότι ήταν τόσο εύκολο να χάσω βάρος, τη δεύτερη εβδομάδα έχασα 8,5 κιλά, είναι μαγικό!</p>
         
-
-<!-- <form id="commentForm" method="POST" class="intlTelInput">
-  <div style="display: flex; align-items: start; justify-content: center;">
-    <div class="form__ava" style="display: flex; align-items: start;">
-      <img class="img__noname" src="user.png" alt="">
-    </div>
-    <div class="form__fields" style="width: 80%;">
-      <input type="text" placeholder="Name" id="inputCommentName" required="" style="margin-bottom: 10px;" value="">
-      <input type="text" placeholder="Add a comment" required="" id="inputCommentText" value="">
-      <textarea style="display: none;" name="" id="inputCommentText" placeholder="SEND" cols="20" rows="5"></textarea>
-    </div>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">13 Απάντηση. </span>
+                         <span class="time">Πριν από 12 λεπτά</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/2.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Μαρία Αρχοντάκη</a>
+                       </h4>
+                       <p>Πρόσφατα είδα μια παρουσίαση από κάποια τραγουδίστρια, δεν θυμάμαι το όνομα, αφιερωμένη στις σταγόνες Fortunella στο Instagram και αποφάσισα να τις δοκιμάσω. Χρησιμοποιώ τις σταγόνες Fortunella εδώ και 4 εβδομάδες, είναι καταπληκτικό, έχω χάσει τόσα κιλά!</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">6 Απάντηση. </span>
+                         <span class="time">Πριν από 13 λεπτά</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/3.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Άννα Βασιλείου</a>
+                       </h4>
+                       <p>Η φίλη μου συνέστησε αυτό το προϊόν πριν από 3 εβδομάδες. Παρήγγειλα τις σταγόνες και τις παρέλαβα 3 μέρες αργότερα. Τα αποτελέσματα είναι εντυπωσιακά.</p>
+        
+        
+                       <p class="bottom">
+                         Αρέσει. <span class="like">19 Απάντηση. </span>
+                         <span class="time">Πριν από 25 λεπτά</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/com-1.png" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Κατερίνα Ξένου</a>
+                       </h4>
+                       <p>Θα ήθελα να δοκιμάσω τις σταγόνες Fortunella αντί για την λιποαναρρόφηση. Έτσι θα εξοικονομήσω τόσα χρήματα!</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like"> Απάντηση. </span>
+                         <span class="time">Πριν από 46 λεπτά</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/5.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Φωτεινή Σταυράκη</a>
+                       </h4>
+                       <p>¡Έχασα 3,5 κιλά σε μιάμιση εβδομάδα!</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">43 Απάντηση. </span>
+                         <span class="time">Πριν από 1 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/6.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Λυδία Σωτηροπούλου</a>
+                       </h4>
+                       <p>
+                         Είδα τις σταγόνες Fortunella στην τηλεόραση. Μόλις τις παρήγγειλα δωρεάν, οι σταγόνες θα παραδοθούν μεθαύριο!
+                       </p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">3 Απάντηση. </span>
+                         <span class="time">Πριν από 1 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/7.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Χριστίνα Δημητρίου</a>
+                       </h4>
+                       <p>Μπορεί να είμαι λίγο πιο υπέρβαρη από περισσότερους από εσάς.</p>
+        
+                       <p class="bottom">
+                         Αρέσει. <span class="like"> Απάντηση. </span>
+                         <span class="time">Πριν από 2 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/8.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Μαρινέλλα Μάρκου</a>
+                       </h4>
+                       <p>Η αδερφή μου χρησιμοποιεί τις σταγόνες Fortunella εδώ και μερικούς μήνες και έχει ήδη χάσει πολλά κιλά.</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">12 Απάντηση. </span>
+                         <span class="time">Πριν από 2 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+    
+    
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/9.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Λουκία Στεργίου</a>
+                       </h4>
+                       <p>Δουλεύει! Όλα αποδείχτηκαν απλά, δεν μπορώ να το πιστέψω, όταν βλέπω τον εαυτό μου αδύνατο.</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">53 Απάντηση. </span>
+                         <span class="time">Πριν από 2 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/10.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Αλίκη Φωκά</a>
+                       </h4>
+                       <p>Ευχαριστώ για τις πληροφορίες, μόλις παρήγγειλα κι εγώ.</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">16 Απάντηση. </span>
+                         <span class="time">Πριν από 2 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/11.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Στέλλα Ρουμελιώτη</a>
+                       </h4>
+                       <p>Οι σταγόνες Fortunella φτάσανε σήμερα, θα αρχίσω να χρησιμοποιώ τις σταγόνες και μετά θα σας ενημερώσω για τα αποτελέσματά μου.</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">2 Απάντηση. </span>
+                         <span class="time">Πριν από 2 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/com-2.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Πέτρος Λυκούργος</a>
+                       </h4>
+                       <p>Η μαμά μου χρησιμοποιεί αυτό το προϊόν και έχει χάσει το περιττό βάρος, λειτουργεί πραγματικά!
+                       </p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">11 Απάντηση. </span>
+                         <span class="time">Πριν από 2 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/13.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Άννα-Μαρία Καμπούρη</a>
+                       </h4>
+                       <p>Έχασα 11 κιλά σε 4 εβδομάδες, είναι πραγματικά υπέροχο προϊόν!</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">33 Απάντηση. </span>
+                         <span class="time">Πριν από 2 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/14.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Ελισάβετ Παππά</a>
+                       </h4>
+                       <p>Μόλις έκανα μια παραγγελία. Ανυπομονώ να δοκιμάσω τις σταγόνες!</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">23 Απάντηση. </span>
+                         <span class="time">Πριν από 3 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/15.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Σοφία Φραγκούλη</a>
+                       </h4>
+                       <p>Λατρεύω τις σταγόνες Fortunella, μου άλλαξαν εντελώς τη ζωή, τις χρησιμοποίησα μόνο για 1,5 μήνα, πραγματικά άλλαξε η ζωή και η υγεία μου!</p>
+                       <img src="images/1c.jpg" style="width: 210px;">
+        
+        
+        
+                       <p class="bottom">
+                         Αρέσει. <span class="like">6 Απάντηση. </span>
+                         <span class="time">Πριν από 3 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/16.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Φωτεινή Γεωργίου</a>
+                       </h4>
+                       <p>Η φιλενάδα μου, έστειλε τις πληροφορίες στο whatsapp, μόλις παρήγγειλα τις σταγόνες!</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">2 Απάντηση. </span>
+                         <span class="time">Πριν από 3 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/18.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Πετρούλα Φαλτσέτα</a>
+                       </h4>
+                       <p>Αποφάσισα να δοκιμάσω και να παραγγείλω τις σταγόνες για τον εαυτό μου. Θέλω να ξεκινήσω και να δω τα αποτελέσματά...</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">8 Απάντηση. </span>
+                         <span class="time">Πριν από 6 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/com-3.png" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Έλενα Αντωνίου</a>
+                       </h4>
+                       <p>Πριν γνωρίσω τις σταγόνες Fortunella, δοκίμασα άλλα προϊόντα και αυτό το προϊόν είναι πραγματικά το καλύτερο για την απώλεια του βάρους.</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">20 Απάντηση. </span>
+                         <span class="time">Πριν από 8 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/20.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Σταυρούλα Παπαδάκη</a>
+                       </h4>
+                       <p>Μόλις παρήγγειλα τις σταγόνες για τον εαυτό μου!</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">10 Απάντηση. </span>
+                         <span class="time">Πριν από 8 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/21.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Ειρήνη Μαυρομιχάλη</a>
+                       </h4>
+                       <p>Πρόσφατα χρησιμοποίησα αυτές τις σταγόνες και λειτούργησαν πολύ καλά, έχασα 14 κιλά!</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">13 Απάντηση. </span>
+                         <span class="time">Πριν από 8 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/22.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Κάτια Ξενάκη</a>
+                       </h4>
+                       <p>Την πρώτη φορά που με εξέπληξε θετικά ένα προϊόν αδυνατίσματος, έχασα βάρος και μάλιστα με υγιεινό τρόπο!</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">3 Απάντηση. </span>
+                         <span class="time">Πριν από 8 ώρα</span>
+                       </p>
+                     </div>
+                   </div>
+                   <div class="media aos-init aos-animate" data-aos="zoom-in">
+                     <div class="media-left">
+                       <a href="#toform">
+                         <img class="media-object" src="images/23.jpg" alt="">
+                       </a>
+                     </div>
+                     <div class="media-body">
+                       <h4 class="media-heading">
+                         <a href="#toform">Ντίνα Ηλιοπούλου</a>
+                       </h4>
+                       <p>Δεν ήξερα ότι μπορείς να χάσεις βάρος χωρίς να κάνεις τίποτα, ειδικά όταν δεν πηγαίνεις στο γυμναστήριο.</p>
+                       <p class="bottom">
+                         Αρέσει. <span class="like">5 Απάντηση. </span>
+                         <span class="time">Πριν από 10 λεπτά</span>
+                       </p>
+                     </div>
+                   </div>
+    
+    
+    
+                   <div id="commentPushBlock"></div>
+    
+    
+    
+                   <!-- <form id="commentForm" method="POST" class="intlTelInput">
+         <div style="display: flex; align-items: start; justify-content: center;">
+           <div class="form__ava" style="display: flex; align-items: start;">
+             <img class="img__noname" src="user.png" alt="">
+           </div>
+           <div class="form__fields" style="width: 80%;">
+             <input type="text" placeholder="Name" id="inputCommentName" required="" style="margin-bottom: 10px;" value="">
+             <input type="text" placeholder="Add a comment" required="" id="inputCommentText" value="">
+             <textarea style="display: none;" name="" id="inputCommentText" placeholder="SEND" cols="20" rows="5"></textarea>
+           </div>
+         
+         </div>
+         <button type="submit" id="commentPush">Send</button>
+       </form> -->
+    
+    
+    
+    
+                   <style>
+                     #commentForm {
+                       margin: 20px 0 10px;
+                       max-width: 500px;
+                       border-radius: 20px;
+                     }
+      
+                     #commentForm label {
+                       color: #fff;
+                     }
+      
+                     #commentForm input,
+                     #commentForm textarea {
+                       width: 100%;
+        
+                       padding: 20px 20px;
+                       box-sizing: border-box;
+                       border: 2px solid #ccc;
+                       border-radius: 25px;
+                       background-color: #f8f8f8;
+                       resize: none;
+                     }
+      
+                     #commentPush {
+                       display: block;
+                       background-color: #cf1014;
+                       border: none;
+                       border-radius: 5px;
+                       color: #fff;
+                       padding: 10px 50px;
+                       text-decoration: none;
+                       margin-top: 15px;
+                       margin-left: 75px;
+                       cursor: pointer;
+                     }
+      
+                     .ava-img {
+                       width: 50px;
+                       margin-right: 10px;
+                       display: inline-block;
+                       vertical-align: middle;
+                     }
+      
+                     .comments__item {
+                       display: flex;
+                       align-items: center;
+                     }
+      
+                     .comments__item-avatar {
+                       margin-right: 10px;
+                     }
+      
+                     .img__noname {
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       margin-right: 5px;
+                     }
+      
+                     .comments__item-head {
+                       background-color: #ebedf0;
+                       padding: 6px 12px 7px 12px;
+                       border-radius: 18px;
+                     }
+      
+                     #inputCommentName:focus {
+                       outline: none;
+                     }
+      
+                     /*  .js-comm, .js-comm2, .js-comm3, .js-comm4, .js-comm5, .js-comm6, .js-comm7 {
+           opacity: 0;
+           transition: .7s ease;
+           height: 1px;
+           margin: 0;
+         }
+         .js-comm.in, .js-comm2.in, .js-comm3.in, .js-comm4.in, .js-comm5.in, .js-comm6.in, .js-comm7.in {
+           opacity: 1;
+           height: 100%;
+           margin-bottom: 20px;
+         }*/
+                     .hidden {
+                       opacity: 0;
+                     }
+      
+                     .visible {
+                       opacity: 1;
+                     }
+                   </style>
   
-  </div>
-  <button type="submit" id="commentPush">Send</button>
-</form> -->
-
-
-
-
-<style>
-    #commentForm {
-    margin: 20px 0 10px;
-    max-width: 500px;
-    border-radius: 20px;
-  }
-
-  #commentForm label {
-    color: #fff;
-  }
-
-  #commentForm input,
-  #commentForm textarea {
-    width: 100%;
-
-    padding: 20px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 25px;
-    background-color: #f8f8f8;
-    resize: none;
-  }
-
-#commentPush {
-    display: block;
-    background-color: #cf1014;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 10px 50px;
-    text-decoration: none;
-    margin-top: 15px;
-    margin-left: 75px;
-    cursor: pointer;
-}
-
-  .ava-img {
-    width: 50px;
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .comments__item {
-    display: flex;
-    align-items: center;
-  }
-
-  .comments__item-avatar {
-    margin-right: 10px;
-  }
-
-  .img__noname {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    margin-right: 5px;
-  }
-
-  .comments__item-head {
-    background-color: #ebedf0;
-    padding: 6px 12px 7px 12px;
-    border-radius: 18px;
-  }
-
-  #inputCommentName:focus {
-    outline: none;
-  }
-/*  .js-comm, .js-comm2, .js-comm3, .js-comm4, .js-comm5, .js-comm6, .js-comm7 {
-    opacity: 0;
-    transition: .7s ease;
-    height: 1px;
-    margin: 0;
-  }
-  .js-comm.in, .js-comm2.in, .js-comm3.in, .js-comm4.in, .js-comm5.in, .js-comm6.in, .js-comm7.in {
-    opacity: 1;
-    height: 100%;
-    margin-bottom: 20px;
-  }*/
-      .hidden{
-       opacity:0;
-    }
-    .visible{
-       opacity:1;
-    }
-
-</style>
-
-                  </div>
+                 </div>
                </div>
             </div>
             <div class="col-md-4"></div>
          </div>
       </section>
       <style>
+        .media-left img {
+          margin-top: 6px;
+          max-width: 50px;
+    
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+        }
          div#bottombar {
          position: fixed;
          bottom: 0;
@@ -1395,7 +1651,7 @@
          border-right-style: solid;
          border-bottom-style: solid;
          border-left-style: solid;
-         background: #dc513a;
+         background:#e10005;
          text-decoration: none;
          padding: 16px 20px;
          border-color: rgb(255, 255, 255);
@@ -1439,7 +1695,7 @@
                               <div class="wisepops-block-image wisepops-block-id-671136 ImagePopupBlockReadOnly__Container-izSvGC cKRjAS">
                                  <div class="ImagePopupBlockReadOnly__ImageNoLink-cDfEhj VEpXU">
                                     <span class="ImagePopupBlockReadOnly__ImagePlacer-kxBUEt euvGbb">
-                                    <img class="ImagePopupBlockReadOnly__InternalImage-eqFMQF jUBOSE" src="images/RaiNewsBarra-logo.png" width="110">
+                                    <img class="ImagePopupBlockReadOnly__InternalImage-eqFMQF jUBOSE" src="images/news_logo.png" width="75">
                                     </span>
                                  </div>
                               </div>
@@ -1454,7 +1710,7 @@
                               <div class="wisepops-block-text wisepops-block-id-671135 TextPopupBlockReadOnly__Container-efninM iDjiZL">
                                  <div>
                                     <div data-contents="true">
-                                       <div class data-block="true" data-editor="5n8k0" data-offset-key="ain11-0-0">
+                                       <!--<div class data-block="true" data-editor="5n8k0" data-offset-key="ain11-0-0">
                                           <div data-offset-key="ain11-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
                                              <span style="font-family: roboto,sans-serif" data-offset-key="ain11-0-0" class="timer_txt">
                                              <span data-text="true">Предложения заканчивается через:</span>
@@ -1462,7 +1718,7 @@
                                              <span id="counter"> 14 : 59</span>
                                              </span>
                                           </div>
-                                       </div>
+                                       </div>-->
                                     </div>
                                  </div>
                               </div>
@@ -1476,7 +1732,7 @@
                            <div class="BlockReadOnly__BlockContainerReadOnly-gwKWaf kfTgQJ">
                               <div class="wisepops-block-cta wisepops-block-id-671137 CallToActionPopupBlock__CTAWrapper-elfZax OWGeE">
                                  <a role="button" class="CallToActionPopupBlock__CallToActionLink-gFBFrK gSggUM" href="#toform" style="min-width :120px;font-size:14px;padding: 10px 10px;font-family: roboto,sans-serif">
-                                    <span>Хочу заказать!</span>
+                                    <span>Θέλω να παραγγείλω!</span>
                                     <svg viewBox="0 0 1792 1792" class="CallToActionPopupBlock__AnimatedArrowWrapper-bPpoPl eORIek">
                                        <path fill="currentColor" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/>
                                     </svg>
@@ -1786,7 +2042,144 @@
             margin: 5px auto !important;
             z-index: 100;
         }
+        .spin-result-wrapper {
+          display: none;
+          padding: 0 10px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 100%;
+          top: 0;
+          z-index: 999;
+          left: 0;
+          height: 100%;
+          position: fixed;
+          background-color: rgba(0, 0, 0, 0.6);
+          text-align: center;
+        }
+        .pop-up-window {
+          position: relative;
+          max-width: 400px;
+          right: 0px;
+          left: 0px;
+          top: 40%;
+          margin: 0px auto;
+          background: #ffffff none repeat scroll 0% 0%;
+          text-align: center;
+          padding: 10px;
+          padding-top: 70px;
+          padding-bottom: 20px;
+          border-radius: 10px;
+          animation: 0.7s ease 0s normal none 1 running pop-up-appear;
+        }
 
+        .close-popup {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-image: url(../fonts/cross.svg);
+          background-size: 100%;
+          top: -40px;
+          border-radius: 50%;
+          -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 10px #fff;
+          right: -40px;
+          cursor: pointer;
+        }
+
+        .pop-up-heading {
+          font-size: 40px;
+          margin-bottom: 20px;
+        }
+
+        .pop-up-text {
+          margin-bottom: 25px;
+          font-size: 24px;
+          line-height: 30px;
+          text-align: center !important;
+        }
+
+        .pop-up-button {
+          text-transform: uppercase;
+          text-decoration: none !important;
+          padding: 10px 20%;
+          font-size: 20px;
+          border-radius: 5px;
+          background-color: #71c341;
+          color: white !important;
+          border: medium none;
+          cursor: pointer;
+          outline: medium none;
+        }
+
+        .cursor-text:active {
+          -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px inset;
+        }
+
+        .pop-up-layer {
+          position: fixed !important;
+          top: 0px !important;
+          width: 100% !important;
+          height: 100% !important;
+          background-color: rgba(0, 0, 0, 0.7) !important;
+          z-index: 99 !important;
+        }
+
+        .pop-up-layer-show {
+          display: block;
+        }
+
+        .pop-up-window {
+          position: relative;
+          max-width: 400px;
+          right: 0px;
+          left: 0px;
+          top: 40%;
+          margin: 0px auto;
+          background: #fff none repeat scroll 0% 0%;
+          text-align: center;
+          padding: 10px;
+          padding-top: 70px;
+          padding-bottom: 20px;
+          border-radius: 10px;
+          animation: 0.7s ease 0s normal none 1 running pop-up-appear;
+        }
+
+        .pop-up-window::before {
+          content: "";
+          position: absolute;
+          width: 110px;
+          height: 110px;
+          top: -55px;
+          left: 0;
+          right: 0px;
+          margin: 0 auto;
+          background-color: #71c341;
+          border-radius: 50%;
+          animation: 0.5s ease 0.6s normal backwards 1 running pop-up-appear-before;
+        }
+
+        .pop-up-window::after {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 20px;
+          top: -20px;
+          left: 0px;
+          right: 0;
+          margin: 0 auto;
+          border-width: medium medium 4px 4px;
+          border-style: none none solid solid;
+          border-color: currentcolor currentcolor white white;
+          -moz-border-top-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          border-image: none;
+          transform: rotate(-45deg);
+          transition: opacity 1s ease 0s;
+          animation: 0.5s ease 0.6s normal backwards 1 running pop-up-appear-after;
+        }
 
     </style>
 
@@ -1817,6 +2210,7 @@
       <div class="glue_block_layer" style="z-index: 1000;"></div>
       <div class="glue_container"></div>
    
+<script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="/libs/js/gdpr.js"></script>
 <link rel="stylesheet" href="/libs/js/gdpr.css">
 <script>
